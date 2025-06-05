@@ -32,17 +32,35 @@
 
   <section id="projects">
     <h2>Projects</h2>
-    <ul>
-      <li><a href="https://github.com/yourusername/project1">Project 1 Title</a></li>
-      <li><a href="https://github.com/yourusername/project2">Project 2 Title</a></li>
-      <!-- You can add more here -->
-    </ul>
+    <div class="project-gallery">
+      <div class="project-card">
+        <h3>Project 1 Title</h3>
+        <p>Short description of the project.</p>
+        <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>Project 2 Title</h3>
+        <p>Short description of the project.</p>
+        <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
+      </div>
+      <!-- Add more project cards as needed -->
+    </div>
   </section>
 
   <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:muhammadumersheikh312@gmail.com">muhammadumersheikh312@gmail.com</a></p>
-    <!-- Add your LinkedIn when ready -->
+    <h2>Contact Me</h2>
+    <form action="mailto:muhammadumersheikh312@gmail.com" method="POST" enctype="text/plain">
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" required /><br /><br />
+
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <label for="message">Message:</label><br />
+      <textarea id="message" name="message" rows="4" required></textarea><br /><br />
+
+      <button type="submit">Send</button>
+    </form>
   </section>
 </body>
 </html>
